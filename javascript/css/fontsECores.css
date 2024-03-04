@@ -1,0 +1,29 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+
+    /*FontS*/
+    --font_serrat: font-family: "Montserrat", sans-serif;
+    --font_popins: font-family: "Poppins", arial;
+    --font-roboto : .roboto-regular font-family: "Roboto", sans-serif;
+
+    /*Colors*/    
+    --cor-01: #288688;
+    --cor-02: #488cb3;
+    --cor-03: #117cb9;
+    --cor-04: #212d97;
+    --cor-05: #98bcf3;
+    --cor-06: #0c8fe7;
+    --cor-07: #fafafa; 
+    --cor-08: #ea03ff;
+    --cor-09: #8aced7;
+    --cor-10: #1e60a7;
+    --cor-11: #ee3333;
+    --cor-12: #080808;
+    --cor-13: #f992ce;
+    --cor-14: #bd006e;
+
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+
+    <link rel="stylesheet" href="../css/geradorDeSenha.css">
+    <script src="../js/geradorDeSenhas.js" defer></script>
+
+</head>
+<body>
+    <div id="register-containe">
+        <div id="register-banner">
+            <div id="banner-layer">
+                <h1 id="bem-vindo">Seja </h1>
+                <h1 id="bem-vindo">Bem-Vindo</h1>
+            </div>
+        </div>
+
+        <div id="register-form">
+            <h2>Crie sua Conta</h2>
+            <p>Registri-se para usar todas as funcionalidade do sistema</p>
+            
+            <!--Entrada Nome-->
+            <div class="form-control"> 
+                <label name="name" >Nome</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu Nome">
+            </div>
+
+            <!--Entrada E-mail-->
+            <div class="form-control"> 
+                <label name="email" >E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu E-mail">
+            </div>
+
+            <!--Entrada Senha-->
+            <div class="form-control">
+                <label name="password" >Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+            </div>
+
+            <!--Gerador de senha-->
+            <p>Quer ajuda para criar uma senha segura?<span id="generate-password">Clique aqui.</span></p>
+
+            <!--inserção de senha-->
+            <div id="generated-password">
+                <p>Aqui está a senha:</p>
+                <h4></h4>
+            </div>
+
+            <!--Entrada Confirmação de senha-->
+            <div class="form-control">
+                <label for="confirmPassword" >Confirmação sua senha</label>
+                <input type="text" id="confirmPassword" placeholder="Confirme sua senha">
+            </div>
+            <input type="submit" value="Cadastrar">
+        </div>
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,154 @@
+@import url('../css/fontsECores.css');
+*{
+    font-family: var(--font_serrat);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--cor-04);
+}
+
+html, body{
+    height: auto;
+    min-height: 100vh;
+}
+
+html{
+    background: linear-gradient(180deg, var(--cor-03) 0%, var(--cor-01) 100%);
+}
+
+input:focus{
+    outline: none;    
+}
+
+
+#register-containe{
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: var(--cor-07)0px 13px 27px -5px, var(--cor-06) 0px 8px 16px -8px;
+}
+
+#register-banner{
+    background:url("../img/montanhasRochosas.jfif");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    
+}
+
+#banner-layer{
+    background-color: rgb(25,11,122,0.4);
+    height: 100%;
+    padding: 4rem;
+    align-items: center;
+}
+
+
+#bem-vindo{
+    
+    font-size: 4rem;;
+    color: var(--cor-07);
+    border: 2px;
+    text-wrap: nowrap;
+    
+}
+
+
+.register-banner{
+    font-size: 300%;
+    margin-bottom: 1.5rem;
+    text-decoration-color: var(--cor-09);
+    word-spacing: 5rem;
+}
+
+#register-form{
+    background-color: var(--cor-07);
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+#register-form p{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--cor-04);
+    font-size: 1.6rem;
+}
+
+.form-control{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: .8rem;
+}
+
+.form-control input{
+    border: none;
+    background-color: var(--cor-07);
+    border-bottom: 1px solid var(--cor-08);
+    padding: .6rem, 0;
+}
+
+#generate-password{
+    color: var(--cor-01);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;   
+}
+
+
+#generate-password:hover{
+    color: var(--cor-09);
+}
+
+#register-form #generated-password {
+    border: 1px solid var(--cor-05);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 4rem;
+    color: var(--cor-04);
+    text-align: center;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#register-form #generated-password p {
+    color: var(--cor-03);
+    margin-bottom: 0.5rem;
+}
+
+#register-form input[type="submit"]{
+    background-color: var(--cor-13);
+    color: var(--cor-07);
+    opacity: .8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: .3s;
+}
+
+#register-form input[type="submit"]:hover{
+        background-color: var(--cor-14);
+        color: var(--cor-02);
+        opacity: 1;
+}
+
+
+
