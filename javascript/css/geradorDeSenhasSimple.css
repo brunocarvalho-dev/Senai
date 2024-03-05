@@ -1,0 +1,60 @@
+@import url("style.css");
+
+body{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--cor-07);
+}
+
+main{
+    padding: 20px;
+    background-color: var(--cor-09);
+    box-shadow: 0 5px 10px var(--cor-08);
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+main > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input{
+    padding: 15px;
+    outline: none;
+    accent-color: var(--cor-08);
+    border-color: var(--cor-08);
+    background-color: var(--cor-07);
+}
+
+input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+    
+}
+
+input[type=range]{
+    width: 90%;
+    background-color: var(--cor-07);
+}
+
+#btnGerar{
+    background-color: var(--cor-13);
+    cursor:pointe;
+    color: var(--cor-07);
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    transition: .3s;
+}
+
+#btnGerar:hover{
+    background-color: var(--cor-14);
+    color: var(--cor-04);
+    opacity: 1;
+}

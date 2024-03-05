@@ -1,9 +1,4 @@
-*{
-    width: 600px;
-    border-color:blue;
-    background-color: rgb(225, 238, 238);
-    
-}
+@import url("style.css");
 
 .text-explicativo{
     text-decoration: none;

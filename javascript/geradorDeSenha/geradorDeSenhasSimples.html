@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Simples</title>
+    
+    <link rel="stylesheet" href="../css/geradorDeSenhasSimple.css">
+
+</head>
+<body id="geradorDeSenhasSimples">
+    <main>
+        <input type="text" id="inputPasswordId">
+        <div>
+            <input type="range" id="inputLengthId" min="6" max="26">
+            <label for="labelLengthId"></label>
+        </div>
+        <div>
+            <input type="checkbox" id="chkLowerId">
+            <label for="chkLowerId">Letras minúsculas</label>
+        </div>
+        <div>
+            <input type="checkbox" id="chkUpperId">
+            <label for="chkUpperId">Letras maiúsculas</label>
+        </div>
+        <div>
+            <input type="checkbox" id="chkNumberId">
+            <label for="chkNumberId">Números</label>
+        </div>
+        <div>
+            <input type="checkbox" id="chkSymbolsId">
+            <label for="chkSymbolsId">Símbulos</label>
+        </div>
+        <button id="btnGerar" onclick="generate()">Gerar Senha</button>
+
+    </main>
+    
+    <script src="../js/geradorDeSenhasSimples.js" defer></script>
+</body>
+</html>

@@ -1,11 +1,4 @@
-@import url('../css/fontsECores.css');
-*{
-    font-family: var(--font_serrat);
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: var(--cor-04);
-}
+@import url("style.css");
 
 html, body{
     height: auto;
