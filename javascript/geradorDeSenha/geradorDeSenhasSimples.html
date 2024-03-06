@@ -2,39 +2,39 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Senhas Simples</title>
-    
+    <title>Gerador de senha Simples</title>
     <link rel="stylesheet" href="../css/geradorDeSenhasSimple.css">
-
 </head>
-<body id="geradorDeSenhasSimples">
+<body>
     <main>
-        <input type="text" id="inputPasswordId">
+        <input id="inputPasswordId" type="text"  />
+        
         <div>
-            <input type="range" id="inputLengthId" min="6" max="26">
-            <label for="labelLengthId"></label>
+            <input id="inputLengthId" type="range" min="6" max="30"/>
+            <label for="inputLengthId"></label>
         </div>
         <div>
-            <input type="checkbox" id="chkLowerId">
+            <input id="chkLowerId" type="checkbox" checked/>
             <label for="chkLowerId">Letras minúsculas</label>
         </div>
         <div>
-            <input type="checkbox" id="chkUpperId">
+            <input id="chkUpperId" type="checkbox" checked/>
             <label for="chkUpperId">Letras maiúsculas</label>
         </div>
         <div>
-            <input type="checkbox" id="chkNumberId">
+            <input id="chkNumberId" type="checkbox" checked/>
             <label for="chkNumberId">Números</label>
         </div>
         <div>
-            <input type="checkbox" id="chkSymbolsId">
-            <label for="chkSymbolsId">Símbulos</label>
+            <input id="chkSymbolsId" type="checkbox" checked/>
+            <label for="chkSymbolsId">Símbolos</label>
         </div>
-        <button id="btnGerar" onclick="generate()">Gerar Senha</button>
 
+        <button id="btnGerar">Gerar</button>
     </main>
-    
+
     <script src="../js/geradorDeSenhasSimples.js" defer></script>
 </body>
 </html>
