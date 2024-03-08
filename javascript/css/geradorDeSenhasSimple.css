@@ -9,7 +9,7 @@ background-color: var(--cor-07);
 }
 
 main{
-    padding: 20px;
+    padding: 50px;
     background-color: var(--cor-09);
     box-shadow: 0 5px 10px var(--cor-08);
     flex-direction: column;
@@ -25,14 +25,17 @@ main > div{
 }
 
 input{
+    width:  240px;
     padding: 15px;
     outline: none;
     accent-color: var(--cor-08);
     border-color: var(--cor-08);
     background-color: var(--cor-07);
+    text-align: center;
 }
 
 input[type=checkbox]{
+    
     width: 18px;
     height: 18px;
     
