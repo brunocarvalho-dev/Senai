@@ -1,0 +1,35 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #3949db; /*azul claro*/
+}
+
+.header {
+    background-color: #0319d8; /* Azul */
+    color: #fff; /* Texto branco */
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 200px; /* Ajuste o tamanho */
+    height: auto;
+}
+
+.hheaderDireita{
+    text-align: right;
+}
+.headerEsquerda {
+    text-align: left;
+  }
+  
+main {
+    padding: 20px;
+}
