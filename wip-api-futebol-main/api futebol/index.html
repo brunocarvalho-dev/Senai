@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>futebol vgl</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,10 +16,15 @@
         <h2 class = "headerDireita">Tudo sobre futebol</h2>
     </div>
     </header>
-<main>
-    
-</main>
-    <script src="script.js"></script>
-    
+    <main>
+        <div>
+            <label for="team">TIME</label>
+            <input id="nomeTime" type="text" placeholder="Digite o time">
+            <button id="btn-mostrar" type="submit" onclick="pegarDados()">MOSTRAR</button>
+        </div>
+        
+        <div id="values"></div>
+            
+    </main>
 </body>
 </html>
