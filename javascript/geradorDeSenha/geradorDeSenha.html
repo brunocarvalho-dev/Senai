@@ -6,7 +6,7 @@
     <title>Gerador de Senhas</title>
 
     <link rel="stylesheet" href="../css/geradorDeSenha.css">
-    <script src="../js/geradorDeSenhas.js" defer></script>
+    
 
 </head>
 <body>
@@ -43,6 +43,28 @@
             <!--Gerador de senha-->
             <p>Quer ajuda para criar uma senha segura?<span id="generate-password">Clique aqui.</span></p>
 
+            <div>
+                <input id="inputLengthId" type="range" min="6" max="30"/>
+                <label for="inputLengthId"></label>
+            </div>
+            <div>
+                <input id="chkLowerId" type="checkbox" checked/>
+                <label for="chkLowerId">Letras minúsculas</label>
+            </div>
+            <div>
+                <input id="chkUpperId" type="checkbox" checked/>
+                <label for="chkUpperId">Letras maiúsculas</label>
+            </div>
+            <div>
+                <input id="chkNumberId" type="checkbox" checked/>
+                <label for="chkNumberId">Números</label>
+            </div>
+            <div>
+                <input id="chkSymbolsId" type="checkbox" checked/>
+                <label for="chkSymbolsId">Símbolos</label>
+            </div>
+    
+
             <!--inserção de senha-->
             <div id="generated-password">
                 <p>Aqui está a senha:</p>
@@ -57,6 +79,7 @@
             <input type="submit" value="Cadastrar">
         </div>
     </div>
+    <script src="../js/geradorDeSenhas.js" defer></script>
         
 </body>
 </html>
