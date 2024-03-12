@@ -13,6 +13,18 @@ input:focus{
     outline: none;    
 }
 
+input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+    
+}
+
+input[type=range]{
+    width: 90%;
+    background-color: var(--cor-07);
+}
+
+
 
 #register-containe{
     max-width: 900px;
@@ -143,5 +155,8 @@ input:focus{
         opacity: 1;
 }
 
+h4{
+    text-align: center;
+}
 
 
