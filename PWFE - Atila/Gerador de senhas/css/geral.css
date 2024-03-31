@@ -1,0 +1,15 @@
+@import url('../css/fonts-colors.css');
+*{
+    font-family: var(--font_serrat);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--cor-01);
+}
+
+body{
+    background-color: var(--cor-02), red;
+    font-family: var(font_popins);
+    
+}
+

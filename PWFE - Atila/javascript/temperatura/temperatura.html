@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converção de Temperatura</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section id="container-temperatura">
+        <header>
+            <h1>Converção Temperaturas</h1>
+        </header>
+        <div>
+            <input id="input_temperatura" type="text">
+            <select id="temperaturaInicial" onchange="temperaturas()">
+                <option id="teperaturaSeletor" selected>Temperaturas</option>
+                <option value="celsius">Célsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        <div id="resposta"></div>        
+    </section>
+
+    <script src="../js/temperatura.js" onload="iniciar()" defer></script>
+</body>
+</html>
