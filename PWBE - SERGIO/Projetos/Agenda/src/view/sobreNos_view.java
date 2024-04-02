@@ -11,12 +11,12 @@ import javax.security.auth.callback.ConfirmationCallback;
  *
  * @author User
  */
-public class sobreNos_view extends javax.swing.JFrame {
+public class SobreNos_view extends javax.swing.JFrame {
 
     /**
      * Creates new form principal_View
      */
-    public sobreNos_view() {
+    public SobreNos_view() {
         initComponents();
     }
 
@@ -178,28 +178,28 @@ public class sobreNos_view extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // ir para tela de consulta de usuario:
-        consulta_view consulta = new consulta_view();
+        Consulta_view consulta = new Consulta_view();
         consulta.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // ir para tela home
-        principal_view home = new principal_view();
+        Principal_view home = new Principal_view();
         home.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // ir para tela de cadasto de contatos
-        cadastro_view cadastro = new cadastro_view();
+        Cadastro_view cadastro = new Cadastro_view();
         cadastro.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // ir para tela de cadastro de evento
-        novoEvento_view novoEvento = new novoEvento_view();
+        NovoEvento_view novoEvento = new NovoEvento_view();
         novoEvento.setVisible(true);
         dispose(); 
     }//GEN-LAST:event_jMenuItem4ActionPerformed
@@ -228,14 +228,18 @@ public class sobreNos_view extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(sobreNos_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreNos_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(sobreNos_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreNos_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(sobreNos_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreNos_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(sobreNos_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SobreNos_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -244,7 +248,7 @@ public class sobreNos_view extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new sobreNos_view().setVisible(true);
+                new SobreNos_view().setVisible(true);
             }
         });
     }

@@ -250,35 +250,35 @@ public class HELP_view extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // ir para tela de consulta de usuario:
-        consulta_view consulta = new consulta_view();
+        Consulta_view consulta = new Consulta_view();
         consulta.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // ir para tela home (principal)
-        principal_view principal = new principal_view();
+        Principal_view principal = new Principal_view();
         principal.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // ir para tela de cadasto de contatos
-        cadastro_view cadastro = new cadastro_view();
+        Cadastro_view cadastro = new Cadastro_view();
         cadastro.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // ir para tela de cadastro de evento
-        novoEvento_view novoEvento = new novoEvento_view();
+        NovoEvento_view novoEvento = new NovoEvento_view();
         novoEvento.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // ir para tela sobre nos:
-        sobreNos_view sobreNos = new sobreNos_view();
+        SobreNos_view sobreNos = new SobreNos_view();
         sobreNos.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem5ActionPerformed
@@ -322,7 +322,7 @@ public class HELP_view extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             // TODO add your handling code here:
-            URI linkCodigoFonte = new URI("https://github.com/brunocarvalho-dev");
+            URI linkCodigoFonte = new URI("https://github.com/brunocarvalho-dev/Senai/tree/9fff124ec3feecb869d502cb85142b57a736ba31/PWBE%20-%20SERGIO/Projetos/Agenda");
             Desktop.getDesktop().browse(linkCodigoFonte);
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(rootPane,"pagina não encontrada" + "\n" + ex);
