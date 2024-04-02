@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "nome": "Ana",
+        "idade":25,
+        "curso":"Informática",
+        "email":"ana@gmail.com"
+    },
+    {   "id" : 2,
+        "nome": "João",
+        "idade":30,
+        "curso":"Engenharia Civil",
+        "email":"joao@hotmail.com"
+    },
+    { 
+        "id" : 2,
+        "nome": "João",
+        "idade":30,
+        "curso":"Engenharia Civil",
+        "email":"joao@hotmail.com"
+    }
+]

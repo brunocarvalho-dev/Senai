@@ -1,0 +1,16 @@
+#Config
+#Wed Feb 21 06:22:16 BRT 2024
+cfg.ancorador=true
+cfg.autosalvarintervalo=5
+cfg.mostrargrade=true
+cfg.apagartextoaoeditar=true
+cfg.location.y=-8
+cfg.location.x=-8
+cfg.mostrardimensoesaomover=true
+cfg.gradelargura=23
+cfg.mostrartooltips=true
+cfg.tipodefault=0
+cfg.mostrarids=false
+cfg.recentes=C\:\\Users\\User\\Documents\\Senai\\SGBD -Eduardo\\EX2\\PROJETO.brM3
+cfg.location.salvar=true
+cfg.propaguedeletetolines=true

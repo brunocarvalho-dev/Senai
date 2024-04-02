@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio - 01</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+</head>
+<body>
+
+    <header>
+        <h1>Média Alunos</h1>   
+    </header>
+
+    <section >
+        <label>Nota - 1</label>
+        <input class="inputNotas" id="nota1" type="number" max="100" min="0" step="5"><br>
+        <label>Nota - 2</label>
+        <input class="inputNotas" id="nota2" type="number" max="100" min="0" step="5"><br>
+        <label>Nota - 3</label>
+        <input class="inputNotas" id="nota3" type="number" max="100" min="0" step="5"><br>
+        <label>Nota - 4</label>
+        <input class="inputNotas" id="nota4" type="number" max="100" min="0" step="5"><br>
+    </section>
+
+    <button class="btn-1" type="submit" onclick="calculaMedia()">CALCULAR MÉDIA</button>
+
+
+    <table style="width: 100%;">
+
+        <tr>
+            <td class="indiceTabela">NOTA1</td>
+            <td class="indiceTabela">NOTA2</td>
+            <td class="indiceTabela">NOTA3</td>
+            <td class="indiceTabela">NOTA4</td>
+            <td class="indiceTabela">MÉDIA</td>
+            <td class="indiceTabela">CONCEITO</td>
+            <td class="indiceTabelaSituacao">SITUAÇÃO</td>
+        </tr>
+        <tr id="notaTabela">
+            <td class="mostrarNota" id="mostrarNota1"></td>
+            <td class="mostrarNota" id="mostrarNota2"></td>
+            <td class="mostrarNota" id="mostrarNota3"></td>
+            <td class="mostrarNota" id="mostrarNota4"></td>
+            <td class="mostrarNota" id="mostrarMedia"></td>
+            <td class="mostrarNota" id="mostrarConceito"></td>
+            <td id="mostrarSituacao"></td>
+        </tr>
+    </table>
+
+    <script src="JS/media.js"></script>
+</body>
+</html>

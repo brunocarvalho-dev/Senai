@@ -1,0 +1,35 @@
+.inputNotas
+{
+    height: 10px;
+    padding: 10px;
+}
+table, th, td {
+    border:1px solid black;
+    height: 25px;
+    border-style:dotted;
+
+}
+#mostrarNome, #nomeBusca{
+    width : 50%;
+}
+.indiceTabela, .indiceTabelaSituacao, .mostrarNota, #mostrarSituacao, #mostrarConceito, #mostrarID, #ID{
+    text-align: center;
+}
+#mostrarID, #ID{
+    width: 30px;
+}
+#ID, #mosrearID
+{
+    width: 20px;
+}
+#IDBusca
+{
+    width: 70px;
+} 
+#IDBusca, #nomeBusca
+{
+    border:1px solid rgb(43, 49, 75);
+    height: 25px;
+    border-style:double;
+}
+
