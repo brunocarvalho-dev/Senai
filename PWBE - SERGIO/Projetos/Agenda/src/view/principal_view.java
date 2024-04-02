@@ -11,12 +11,12 @@ import javax.security.auth.callback.ConfirmationCallback;
  *
  * @author User
  */
-public class principal_view extends javax.swing.JFrame {
+public class Principal_view extends javax.swing.JFrame {
 
     /**
      * Creates new form principal_View
      */
-    public principal_view() {
+    public Principal_view() {
         initComponents();
     }
 
@@ -179,43 +179,38 @@ public class principal_view extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        //Botão de fechar tela
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-        consulta_view consulta = new consulta_view();
+        // Abrir tela consulta contatos
+        Consulta_view consulta = new Consulta_view();
         consulta.setVisible(true);
-        dispose();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
-        cadastro_view cadastro =new cadastro_view();
+        // Abrir tela cadastro
+        Cadastro_view cadastro =new Cadastro_view();
         cadastro.setVisible(true);
-        dispose();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-        novoEvento_view evento = new novoEvento_view();
+        //Abrir tela novo evento
+        NovoEvento_view evento = new NovoEvento_view();
         evento.setVisible(true);
-        dispose();
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-        // TODO add your handling code here:
-        sobreNos_view sobreNos = new sobreNos_view();
+        // Abrir tela Sobre nós
+        SobreNos_view sobreNos = new SobreNos_view();
         sobreNos.setVisible(true);
-        dispose();
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        // TODO add your handling code here:
+        // Abrir tela ajuda
         HELP_view help = new HELP_view();
         help.setVisible(true);
-        dispose();
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
@@ -235,21 +230,23 @@ public class principal_view extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(principal_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(principal_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(principal_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(principal_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new principal_view().setVisible(true);
+                new Principal_view().setVisible(true);
             }
         });
     }
