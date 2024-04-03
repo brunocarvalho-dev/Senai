@@ -16,12 +16,11 @@ public class Cpf_Validation{
     public boolean isCpf_value() {
         return cpf_value;
     }
-
-    public void setCpf(int cpf) {
-        this.cpf = String.valueOf(cpf);
-    }   
-    public boolean validation(){
+  
+    public boolean validation_CPF(String CPF){
         
+        this.cpf = String.valueOf(CPF);
+         
         Integer [] cpfArray = new Integer[11];
 		
         for(int i = 0, teste1 = 10; i <= 8; i++, teste1--){

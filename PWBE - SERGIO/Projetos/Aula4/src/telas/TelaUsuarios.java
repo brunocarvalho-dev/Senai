@@ -358,3 +358,4 @@ public class TelaUsuarios extends javax.swing.JInternalFrame {
     private javax.swing.JTextField txtSenha;
     // End of variables declaration//GEN-END:variables
 }
+

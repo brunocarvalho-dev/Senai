@@ -50,13 +50,14 @@ public class Cadastro_view extends javax.swing.JFrame {
         txtTelefone = new javax.swing.JTextField();
         txtEndereco = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        jLabel_nome = new javax.swing.JLabel();
+        jLabel_cpf = new javax.swing.JLabel();
+        jLabel_nasc = new javax.swing.JLabel();
+        jLabel_tel = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
-        jLabel15 = new javax.swing.JLabel();
+        jLabel_email = new javax.swing.JLabel();
+        jLabel_endereco = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
@@ -140,14 +141,29 @@ public class Cadastro_view extends javax.swing.JFrame {
                 txtCPFActionPerformed(evt);
             }
         });
+        txtCPF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCPFKeyTyped(evt);
+            }
+        });
 
         txtNascimento.setBackground(new java.awt.Color(0, 255, 255));
         txtNascimento.setFont(new java.awt.Font("Nachlieli CLM", 3, 18)); // NOI18N
         txtNascimento.setForeground(new java.awt.Color(102, 0, 102));
+        txtNascimento.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNascimentoKeyTyped(evt);
+            }
+        });
 
         txtTelefone.setBackground(new java.awt.Color(0, 255, 255));
         txtTelefone.setFont(new java.awt.Font("Nachlieli CLM", 3, 18)); // NOI18N
         txtTelefone.setForeground(new java.awt.Color(102, 0, 102));
+        txtTelefone.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtTelefoneKeyTyped(evt);
+            }
+        });
 
         txtEndereco.setBackground(new java.awt.Color(0, 255, 255));
         txtEndereco.setFont(new java.awt.Font("Nachlieli CLM", 3, 18)); // NOI18N
@@ -168,14 +184,6 @@ public class Cadastro_view extends javax.swing.JFrame {
             }
         });
 
-        jLabel9.setText("jLabel9");
-
-        jLabel10.setText("jLabel10");
-
-        jLabel12.setText("jLabel12");
-
-        jLabel13.setText("jLabel13");
-
         jLabel14.setFont(new java.awt.Font("Nachlieli CLM", 1, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(0, 0, 204));
         jLabel14.setText("Email");
@@ -183,16 +191,13 @@ public class Cadastro_view extends javax.swing.JFrame {
         txtEmail.setBackground(new java.awt.Color(0, 255, 255));
         txtEmail.setFont(new java.awt.Font("Nachlieli CLM", 1, 18)); // NOI18N
         txtEmail.setForeground(new java.awt.Color(102, 0, 102));
-        txtEmail.setMinimumSize(new java.awt.Dimension(68, 32));
-
-        jLabel15.setText("jLabel15");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(121, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
@@ -231,15 +236,16 @@ public class Cadastro_view extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel14)
                         .addGap(40, 40, 40)
-                        .addComponent(txtEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(txtEmail)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel15)
-                    .addComponent(jLabel9))
-                .addGap(0, 113, Short.MAX_VALUE))
+                    .addComponent(jLabel_cpf)
+                    .addComponent(jLabel_nasc)
+                    .addComponent(jLabel_tel)
+                    .addComponent(jLabel_email)
+                    .addComponent(jLabel_nome)
+                    .addComponent(jLabel_endereco))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -257,31 +263,32 @@ public class Cadastro_view extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9))
+                    .addComponent(jLabel_nome))
                 .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
+                    .addComponent(jLabel_cpf))
                 .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(txtNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12))
+                    .addComponent(jLabel_nasc))
                 .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(txtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel13))
+                    .addComponent(jLabel_tel))
                 .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
                     .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15))
+                    .addComponent(jLabel_email))
                 .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(txtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_endereco))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addContainerGap())
@@ -438,6 +445,30 @@ public class Cadastro_view extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtEnderecoActionPerformed
 
+    private void txtCPFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCPFKeyTyped
+        // TODO add your handling code here:
+        String caracter = "0123456789";
+        if(!caracter.contains(evt.getKeyChar() + "")){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtCPFKeyTyped
+
+    private void txtNascimentoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNascimentoKeyTyped
+        // TODO add your handling code here:
+        String caracter = "0123456789";
+        if(!caracter.contains(evt.getKeyChar() + "")){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtNascimentoKeyTyped
+
+    private void txtTelefoneKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefoneKeyTyped
+        // TODO add your handling code here:
+        String caracter = "0123456789";
+        if(!caracter.contains(evt.getKeyChar() + "")){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtTelefoneKeyTyped
+
     /**
      * @param args the command line arguments
      */
@@ -467,6 +498,18 @@ public class Cadastro_view extends javax.swing.JFrame {
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -475,16 +518,15 @@ public class Cadastro_view extends javax.swing.JFrame {
             }
         });
     }
+      
+
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -492,7 +534,12 @@ public class Cadastro_view extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel_cpf;
+    private javax.swing.JLabel jLabel_email;
+    private javax.swing.JLabel jLabel_endereco;
+    private javax.swing.JLabel jLabel_nasc;
+    private javax.swing.JLabel jLabel_nome;
+    private javax.swing.JLabel jLabel_tel;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -512,25 +559,99 @@ public class Cadastro_view extends javax.swing.JFrame {
     private javax.swing.JTextField txtTelefone;
     // End of variables declaration//GEN-END:variables
 
-    private void adicionar() {
+    @SuppressWarnings("empty-statement")
+  private void adicionar() {
         
         Cpf_Validation cpf_valid = new Cpf_Validation(); ;
-        cpf_valid.setCpf(Integer.parseInt(txtCPF.getText()));
-        boolean cpf = cpf_valid.isCpf_value();
+        Validation_Nome_Email_Tel_Endereco valids = new Validation_Nome_Email_Tel_Endereco();
         
-        JOptionPane.showMessageDialog(null, cpf );
-/*        
-        if(cpf){
-                String sql = "INSERT INTO tbl_usuarios(nome,cpf,nascimento,telefone,email,endereco)VALUES(?,?,?,?,?,?)";
+        boolean cpf = false;
+        boolean nome = false;
+        boolean email = false;
+        boolean tel = false;
+        boolean endereco = false;
         
+
+        try{
+            cpf_valid.validation_CPF(txtCPF.getText());
+            cpf = cpf_valid.isCpf_value();
+            if(cpf){
+                jLabel_cpf.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/knobValidGreen.png")));
+            }else{
+                jLabel_cpf.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/knobCancel.png")));
+            }
+            
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Erro no cpf" + e);
+            
+        }
+
+        try{
+            valids.Nome_valiation(txtNome.getText());
+            nome = valids.isNome_valid();
+            if(nome){
+                jLabel_nome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/knobValidGreen.png")));
+            }else{
+                jLabel_nome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/knobCancel.png")));
+            }
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Erro no nome" + e);            
+        }
+
+        try{
+            valids.Email_validation(txtEmail.getText());
+            email = valids.isEmail_valid();
+             if(email){
+                jLabel_email.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/knobValidGreen.png")));
+            }else{
+                jLabel_email.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/knobCancel.png")));
+            }
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Erro no email" + e);        
+        }
+
+        try{
+            valids.Tel_valiation(txtTelefone.getText());
+            tel = valids.isTel_valid();
+             if(tel){
+                jLabel_tel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/knobValidGreen.png")));
+            }else{
+                jLabel_tel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/knobCancel.png")));
+            }
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Erro no telefone" + e);  
+        }
+
+        try{
+            valids.Endereco_valiation(txtEndereco.getText());
+            endereco = valids.isEndereco_valid();
+             if(endereco){
+                jLabel_endereco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/knobValidGreen.png")));
+            }else{
+                jLabel_endereco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/knobCancel.png")));
+            }
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Erro no endereço" + e);
+
+        }
+                
+ 
+        
+        boolean dta_nasc = true;
+        
+        //JOptionPane.showMessageDialog(null, nome + "" + cpf + "" + tel + "" + email + "" + endereco );
+        
+        if(nome & cpf & tel & email & dta_nasc & endereco){
+ /*             String sql = "INSERT INTO tbl_usuarios(nome,cpf,nascimento,telefone_celular,email,endereco)VALUES(?,?,?,?,?,?)";
+
                 try{
                     pst = conexao.prepareStatement(sql);
                     pst.setString(1, txtNome.getText());
                     pst.setString(2, txtCPF.getText());
                     pst.setString(3, txtNascimento.getText());
-                    pst.setString(3, txtTelefone.getText());
-                    pst.setString(3, txtEmail.getText());
-                    pst.setString(3, txtEndereco.getText());
+                    pst.setString(4, txtTelefone.getText());
+                    pst.setString(5, txtEmail.getText());
+                    pst.setString(6, txtEndereco.getText());
                     int adicionado = pst.executeUpdate(); //retorna se estiver ok!
                     if(adicionado > 0){
                         JOptionPane.showMessageDialog(null, "Usuário"  + txtNome.getText() + " adicionado(a) com sucesso!");
@@ -540,11 +661,11 @@ public class Cadastro_view extends javax.swing.JFrame {
                         txtTelefone.setText(null);
                         txtEmail.setText(null);
                         txtEndereco.setText(null);
-                        
+
                     }
                 }catch(Exception e){
                     JOptionPane.showMessageDialog(null, "Usuário não Adicionado!/n" + "Erro: " + e );
-                    
+
                     txtNome.setText(null);
                     txtCPF.setText(null);
                     txtNascimento.setText(null);
@@ -552,11 +673,12 @@ public class Cadastro_view extends javax.swing.JFrame {
                     txtEmail.setText(null);
                     txtEndereco.setText(null);
                 }
-
-                JOptionPane.showMessageDialog(null, cpf + "cpf ok");
+*/
+               JOptionPane.showMessageDialog(null, cpf + "cpf ok");
         }else{
+            JOptionPane.showMessageDialog(null, "falha no teste");
             
             JOptionPane.showMessageDialog(null, cpf + "cpf false");
         }
-*/    }
+    }
 }
